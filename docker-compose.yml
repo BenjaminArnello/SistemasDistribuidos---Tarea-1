@@ -1,0 +1,24 @@
+version: "4.18.0"
+services:
+  redis1:
+    image: redis:7.0.10
+    ports:
+      - "6379:6379"
+    command: redis-server --maxmemory 1300kb --slowlog-log-slower-than 0
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+  redis2:
+    image: redis:7.0.10
+    ports:
+      - "6380:6379"
+    command: redis-server --maxmemory 1300kb --slowlog-log-slower-than 0
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+  redis3:
+    image: redis:7.0.10
+    command: redis-server --maxmemory 1300kb --slowlog-log-slower-than 0
+    ports:
+      - "6381:6379"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      
