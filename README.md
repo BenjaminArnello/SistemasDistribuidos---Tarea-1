@@ -12,4 +12,7 @@ Codigos del Proyecto:
   
   -get.py: Codigo principal del sistema, por defecto viene con los ajustes necesarios para que el sistema opere mediante TTL
   
+  -video demostrativo: https://drive.google.com/file/d/1i-TPaK8yuBo7pflulE7rsqAhUkPK0pW8/view?usp=sharing
+  
  Imagen de Redis Utilizada: https://hub.docker.com/_/redis
+
